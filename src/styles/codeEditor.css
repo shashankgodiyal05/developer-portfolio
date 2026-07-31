@@ -1,0 +1,91 @@
+.editor-window {
+  background: #111827;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  max-width: 520px;
+  margin: auto;
+}
+
+.editor-header {
+  background: #1e293b;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+}
+
+.file-name {
+  color: #cbd5e1;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.red {
+  background: #ef4444;
+}
+
+.yellow {
+  background: #f59e0b;
+}
+
+.green {
+  background: #22c55e;
+}
+
+.editor-body {
+  padding: 25px;
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.keyword {
+  color: #c084fc;
+}
+
+.variable {
+  color: #ffffff;
+}
+
+.operator {
+  color: #ffffff;
+}
+
+.property {
+  color: #38bdf8;
+}
+
+.string {
+  color: #22c55e;
+}
+
+.array {
+  color: #fbbf24;
+}
+
+.boolean {
+  color: #fb7185;
+}
+
+.brace {
+  color: white;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #38bdf8;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

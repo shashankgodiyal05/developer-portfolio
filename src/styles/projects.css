@@ -1,0 +1,237 @@
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.projects-section {
+  position: relative;
+  padding: 110px 0;
+  background: #0b1220;
+  overflow: hidden;
+}
+
+.projects-section::before,
+.projects-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+}
+
+.projects-section::before {
+  width: 300px;
+  height: 300px;
+  background: rgba(56, 189, 248, 0.08);
+  top: -120px;
+  left: -120px;
+}
+
+.projects-section::after {
+  width: 280px;
+  height: 280px;
+  background: rgba(14, 165, 233, 0.08);
+  bottom: -100px;
+  right: -100px;
+}
+
+.projects-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.projects-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.projects-heading h5 {
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.projects-heading h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.projects-heading p {
+  color: #94a3b8;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.project-card {
+  position: relative;
+  background: rgba(17, 24, 39, 0.88);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  transition: .35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56,189,248,.35);
+  box-shadow: 0 20px 45px rgba(56,189,248,.15);
+}
+
+/* Featured Card */
+
+.featured-card {
+  border: 1px solid rgba(56,189,248,.35);
+}
+
+.featured-card:hover {
+  box-shadow: 0 20px 55px rgba(56,189,248,.25);
+}
+
+/* ==========================================
+   Featured Badge
+========================================== */
+
+.featured-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #38bdf8;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==========================================
+   Typography
+========================================== */
+
+.project-card h3 {
+  color: white;
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+}
+
+.project-description {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+/* ==========================================
+   Tech Stack
+========================================== */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.tech-badge {
+  background: rgba(56,189,248,.08);
+  color: #38bdf8;
+  border: 1px solid rgba(56,189,248,.2);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.tech-badge:hover {
+  background: #38bdf8;
+  color: white;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-buttons .btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.project-buttons .btn-info {
+  background: #38bdf8;
+  border: none;
+  color: #08111f;
+}
+
+.project-buttons .btn-info:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+.project-buttons .btn-outline-light:hover {
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 992px) {
+
+  .projects-heading h2 {
+    font-size: 2.3rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 80px 0;
+  }
+
+  .projects-heading h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .featured-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
