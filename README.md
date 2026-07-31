@@ -23,7 +23,7 @@ A modern, responsive developer portfolio showcasing my skills, experience, proje
 
 ## Live Demo
 
-https://portfolio-gold-ten-31.vercel.app/
+https://portfolio-v2-delta-weld-11.vercel.app/
 
 ## Author
 
